@@ -11,12 +11,11 @@ class Smux < Formula
     bin.install "smux"
   end
 
-  def post_install
-    tmux_conf = Pathname.new(Dir.home)/".tmux.conf"
-    unless tmux_conf.exist?
-      tmux_conf.write("set -g mouse on\n")
-      ohai "Created ~/.tmux.conf with mouse support"
-    end
+  def caveats
+    <<~EOS
+      To enable mouse scrolling in tmux, run:
+        echo 'set -g mouse on' >> ~/.tmux.conf
+    EOS
   end
 
   test do
