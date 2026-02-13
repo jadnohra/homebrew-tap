@@ -2,7 +2,7 @@ class Smux < Formula
   desc "Simple tmux — human-friendly session management"
   homepage "https://github.com/jadnohra/smux"
   url "https://github.com/jadnohra/smux/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "1ab9f508515357d03a40ba8222e447cedb55ef5208c51e29cf55d2c4c407e264"
+  sha256 "7a03a5264c4da0c8b2cd953ef6182efb4b81b348b112a774b9f85b15a022924d"
   license "MIT"
 
   depends_on "tmux"
